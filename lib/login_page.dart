@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   void initState() {
     super.initState();
-    // Initialize any controllers or variables if needed
+
   }
 
   Future<void> userLogin(BuildContext context) async {
@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top Image
+            
               Center(child: Image.asset('assets/login1image.png', height: 220)),
 
               SizedBox(height: 12),
