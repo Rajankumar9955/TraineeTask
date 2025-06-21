@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
       ),
       body: SafeArea(
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 16, 16, 120), 
+          padding:  EdgeInsets.fromLTRB(16, 16, 16, 120), 
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,21 +56,21 @@ class HomePage extends StatelessWidget {
                 Icon(Icons.search, size: 24),
               ],
             ),
-            const SizedBox(height: 24),
-            const Text(
+             SizedBox(height: 24),
+             Text(
               "Hi-Fi Shop & Service",
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 6),
-            const Text(
+             SizedBox(height: 6),
+             Text(
               "Audio shop on Rustaveli Ave 57.\nThis shop offers both products and services",
               style: TextStyle(color: Colors.grey),
             ),
-            const SizedBox(height: 24),
+             SizedBox(height: 24),
 
        
             _buildSectionHeader("Products", 41),
-            const SizedBox(height: 12),
+             SizedBox(height: 12),
             _buildGrid([
               _buildGridItem(
                 imagePath: "assets/th.jpg",
@@ -84,11 +84,11 @@ class HomePage extends StatelessWidget {
               ),
             ]),
 
-            const SizedBox(height: 24),
+             SizedBox(height: 24),
 
       
             _buildSectionHeader("Accessories", 19),
-            const SizedBox(height: 12),
+             SizedBox(height: 12),
             _buildGrid([
               _buildGridItem(
                 imagePath: "assets/preview_1.jpg",
@@ -118,9 +118,9 @@ class HomePage extends StatelessWidget {
       children: [
         Text(
           "$title $count",
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+          style:  TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         ),
-        const Text(
+         Text(
           "Show all",
           style: TextStyle(color: Colors.blue),
         ),
@@ -153,21 +153,21 @@ class HomePage extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: const Color(0xFFF5F5F5),
+            color:  Color(0xFFF5F5F5),
             borderRadius: BorderRadius.circular(16),
           ),
-          padding: const EdgeInsets.all(12),
+          padding:  EdgeInsets.all(12),
           child: Column(
             children: [
-              const SizedBox(height: 8),
+               SizedBox(height: 8),
               Image.asset(imagePath, width: 70, height: 70, fit: BoxFit.contain),
-              const SizedBox(height: 2),
+               SizedBox(height: 2),
               Text(
                 title,
-                style: const TextStyle(fontWeight: FontWeight.w600),
+                style:  TextStyle(fontWeight: FontWeight.w600),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 8),
+               SizedBox(height: 8),
               if (availability != null)
                 Text(
                   availability,
@@ -176,12 +176,12 @@ class HomePage extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-              if (availability != null) const SizedBox(height: 6),
-              Text(price, style: const TextStyle(fontSize: 14)),
+              if (availability != null)  SizedBox(height: 6),
+              Text(price, style:  TextStyle(fontSize: 14)),
             ],
           ),
         ),
-        const Positioned(
+         Positioned(
           top: 8,
           right: 8,
           child: Icon(Icons.delete_outline),
